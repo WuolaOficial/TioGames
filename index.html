@@ -26,117 +26,265 @@
 <body>
 
     <header>
-        <div class="header">
+        <div class="header searchSection">
             <span class="logo">TIOGAMES</span>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a class="pointer" href="#">Nuevos</a></li>
                     <li><a class="pointer" href="#">Informacion</a></li>
                     <li><a class="discord" href="https://discord.gg/YVvUAM8gXM"><span>Discord</span></a></li>
                 </ul>
             </nav>
         </div>
+        <div class="navbar">
+            <div class="form">
+                <div class="search_buscador">
+                    
+                    <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+                    <button onclick="search()">Buscar</button>
+                    <button onclick="resetSearch()">Eliminar</button>
+                
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
         <div class="contenedor-main">
             <section>
-                <div class="atencion">
+                <!-- <div class="atencion">
                     <span class="titulo-atencion">Aviso importante</span>
                     <span class="parrafo-atencion">Por ahora no tenemos buscador de juegos, asi que usa <span>CTRL +  F</span></span>
-                </div>
+                </div> -->
                 <div class="buscador">
                     <div>
                         <div class="juegos-links">
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">A</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">B</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">C</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">D</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">E</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">F</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">G</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">H</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">I</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">J</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
-                            </ul>
-                            <ul>
-                                <li class="margin-abc"><span class="abecedario">K</span></li>
-                                <li><a href="#"><span>Among us</span></a></li>
+                            <ul id="dataList">
+                                <!-- A -->
+                                <li><a href=""><span>Among us</span></a></li>
+                                <li><a href=""><span>Alice madness returns</span></a></li>
+                                <li><a href=""><span>Alien insolation</span></a></li>
+                                <li><a href=""><span>Assassins's creed (Todos)</span></a></li>
+                                <!-- B -->
+                                <li><a href=""><span>Blazing beakjs</span></a></li>
+                                <li><a href=""><span>Buckshot roulette</span></a></li>
+                                <li><a href=""><span>Brotato</span></a></li>
+                                <li><a href=""><span>Blasphemous</span></a></li>
+                                <li><a href=""><span>Blasphemous 2</span></a></li>
+                                <li><a href=""><span>Binding of isaac: rebirth</span></a></li>
+                                <li><a href=""><span>Brutal doom</span></a></li>
+                                <li><a href=""><span>Ben and ed</span></a></li>
+                                <li><a href=""><span>Batman arkham knight</span></a></li>
+                                <li><a href=""><span>Batman arkham city</span></a></li>
+                                <li><a href=""><span>Batman arkham asylum</span></a></li>
+                                <li><a href=""><span>Bully</span></a></li>
+                                <li><a href=""><span>Battlefield bad company 2</span></a></li>
+                                <li><a href=""><span>Battlefield 4</span></a></li>
+                                <!-- C -->
+                                <li><a href=""><span>Core keeper</span></a></li>
+                                <li><a href=""><span>Castle crashers</span></a></li>
+                                <li><a href=""><span>Counter strike 1.6</span></a></li>
+                                <li><a href=""><span>Counter strike source</span></a></li>
+                                <li><a href=""><span>Classic sport driving</span></a></li>
+                                <li><a href=""><span>Choo-choo charles</span></a></li>
+                                <li><a href=""><span>Celeste</span></a></li>
+                                <li><a href=""><span>Culm of the lamb</span></a></li>
+                                <li><a href=""><span>Contraband police</span></a></li>
+                                <li><a href=""><span>Civilization IV</span></a></li>
+                                <li><a href=""><span>Civilization V</span></a></li>
+                                <li><a href=""><span>Cuphead</span></a></li>
+                                <li><a href=""><span>Call of duty world at war</span></a></li>
+                                <li><a href=""><span>Crysis (Todos)</span></a></li>
+                                <li><a href=""><span>Call of duty MW4</span></a></li>
+                                <li><a href=""><span>Call of duty black ops 2</span></a></li>
+                                <li><a href=""><span>Call of duty 2</span></a></li>
+                                <li><a href=""><span>Call of duty advanced warfare</span></a></li>
+                                <li><a href=""><span>Call of duty ghost</span></a></li>
+                                <li><a href=""><span>Call of duty modern warfare 2</span></a></li>
+                                <li><a href=""><span>Company of heroes</span></a></li>
+                                <li><a href=""><span>Call of duty modern warfare 3</span></a></li>
+                                <li><a href=""><span>Call of duty black ops</span></a></li>
+                                <!-- D -->
+                                <li><a href=""><span>Duck game</span></a></li>
+                                <li><a href=""><span>Don't scape</span></a></li>
+                                <li><a href=""><span>Dragon ball final bout</span></a></li>
+                                <li><a href=""><span>Doom 64</span></a></li>
+                                <li><a href=""><span>Dead space</span></a></li>
+                                <li><a href=""><span>Dragon ball figther z ultimate edition</span></a></li>
+                                <li><a href=""><span>Dragon ball fighter z</span></a></li>
+                                <li><a href=""><span>Dragon ball xenoverse</span></a></li>
+                                <li><a href=""><span>Dead space 2</span></a></li>
+                                <li><a href=""><span>Doom eternal</span></a></li>
+                                <li><a href=""><span>Dragon ball xenoverse 2</span></a></li>
+                                <li><a href=""><span>Dragon age origins ultimate</span></a></li>
+                                <!-- E -->
+                                <li><a href=""><span>Euro truck simulator 2</span></a></li>
+                                <!-- F -->
+                                <li><a href=""><span>Fifa 2003</span></a></li>
+                                <li><a href=""><span>Forager</span></a></li>
+                                <li><a href=""><span>Fears To Phatom</span></a></li>
+                                <li><a href=""><span>Fallout 3</span></a></li>
+                                <li><a href=""><span>Fifa 2014</span></a></li>
+                                <li><a href=""><span>Farcry 2</span></a></li>
+                                <li><a href=""><span>Farcry 3</span></a></li>
+                                <li><a href=""><span>Farcry 4</span></a></li>
+                                <li><a href=""><span>Flatout</span></a></li>
+                                <li><a href=""><span>Five Night Freddy's Security Breach</span></a></li>
+                                <li><a href=""><span>Fifa 2017</span></a></li>
+                                <li><a href=""><span>Fifa 2023</span></a></li>
+                                <li><a href=""><span>Fallout New Vegas</span></a></li>
+                                <!-- G -->
+                                <li><a href=""><span>gta vice city</span></a></li>
+                                <li><a href=""><span>geometry dash 2.204</span></a></li>
+                                <li><a href=""><span>gris</span></a></li>
+                                <li><a href=""><span>gta 3</span></a></li>
+                                <li><a href=""><span>goat simulator</span></a></li>
+                                <li><a href=""><span>garry's mod</span></a></li>
+                                <li><a href=""><span>gta san andreas</span></a></li>
+                                <li><a href=""><span>gta 5</span></a></li>
+                                <li><a href=""><span>gta 4</span></a></li>
+                                <!-- H -->
+                                <li><a href=""><span>Half-Life</span></a></li>
+                                <li><a href=""><span>HOLLOW KNIGHT</span></a></li>
+                                <li><a href=""><span>Hotline Miami</span></a></li>
+                                <li><a href=""><span>Hotline Miami 2</span></a></li>
+                                <li><a href=""><span>Have A Nice Death</span></a></li>
+                                <li><a href=""><span>Hitman 3</span></a></li>
+                                <li><a href=""><span>House Flipper</span></a></li>
+                                <li><a href=""><span>Hawx</span></a></li>
+                                <li><a href=""><span>Hawx 2</span></a></li>
+                                <!-- I -->
+                                <li><a href=""><span>internet cafe simulator</span></a></li>
+                                <li><a href=""><span>internet cafe simulator 2</span></a></li>
+                                <li><a href=""><span>inside the backrooms</span></a></li>
+                                <li><a href=""><span>injustice gods among us ultimate</span></a></li>
+                                <!-- J -->
+                                <li><a href=""><span>Jurassic World Evolution</span></a></li>
+                                <!-- K -->
+                                <li><a href=""><span>Kinotopet</span></a></li>
+                                <li><a href=""><span>Katana zero</span></a></li>
+                                <!-- L -->
+                                <li><a href=""><span>Los Simpsons Hit & Run</span></a></li>
+                                <li><a href=""><span>Lemon Cake</span></a></li>
+                                <li><a href=""><span>Left 4 Dead</span></a></li>
+                                <li><a href=""><span>Left 4 Dead 2</span></a></li>
+                                <li><a href=""><span>Lego Piratas del Caribe</span></a></li>
+                                <li><a href=""><span>Lego Marvel Super Heroes</span></a></li>
+                                <li><a href=""><span>Lego Batman</span></a></li>
+                                <li><a href=""><span>Lego Batman 2</span></a></li>
+                                <li><a href=""><span>Lego Indiana Jones</span></a></li>
+                                <li><a href=""><span>Lego City Undercover</span></a></li>
+                                <!-- M -->
+                                <li><a href=""><span>Moto gp 17</span></a></li>
+                                <li><a href=""><span>Mafia 2</span></a></li>
+                                <li><a href=""><span>Metro 2023</span></a></li>
+                                <li><a href=""><span>Mortal kombat 9</span></a></li>
+                                <li><a href=""><span>Madness project nexus</span></a></li>
+                                <li><a href=""><span>Medal of honor allied assault</span></a></li>
+                                <li><a href=""><span>Medal of honor airborne</span></a></li>
+                                <li><a href=""><span>Madison</span></a></li>
+                                <li><a href=""><span>Medal of honor 2010</span></a></li>
+                                <li><a href=""><span>Minecraft dungeons</span></a></li>
+                                <li><a href=""><span>My dream setup</span></a></li>
+                                <li><a href=""><span>My friend pedro</span></a></li>
+                                <li><a href=""><span>Melvor idle</span></a></li>
+                                <li><a href=""><span>Max payne 2</span></a></li>
+                                <li><a href=""><span>Max payne</span></a></li>
+                                <!-- N -->
+                                <li><a href=""><span>Need For Speed Hot Pursuit 2 (2002)</span></a></li>
+                                <li><a href=""><span>Need For Speed Hot Pursuit (2010)</span></a></li>
+                                <li><a href=""><span>Need For Speed</span></a></li>
+                                <li><a href=""><span>Need For Speed Most Wanted</span></a></li>
+                                <li><a href=""><span>Need For Speed Carbon</span></a></li>
+                                <!-- O -->
+                                <li><a href=""><span>One Shot</span></a></li>
+                                <li><a href=""><span>outlast</span></a></li>
+                                <!-- P -->
+                                <li><a href=""><span>prison architect</span></a></li>
+                                <li><a href=""><span>plantas vs zombies</span></a></li>
+                                <li><a href=""><span>papers please</span></a></li>
+                                <li><a href=""><span>punch club</span></a></li>
+                                <li><a href=""><span>punch club 2</span></a></li>
+                                <li><a href=""><span>pizza tower</span></a></li>
+                                <li><a href=""><span>portal</span></a></li>
+                                <li><a href=""><span>portal 2</span></a></li>
+                                <li><a href=""><span>plague inc: envolved</span></a></li>
+                                <li><a href=""><span>pico park</span></a></li>
+                                <li><a href=""><span>paint the town red</span></a></li>
+                                <li><a href=""><span>passpartout 2</span></a></li>
+                                <li><a href=""><span>people playground</span></a></li>
+                                <li><a href=""><span>phasmophobia</span></a></li>
+                                <li><a href=""><span>project zomboid</span></a></li>
+                                <li><a href=""><span>party animals</span></a></li>
+                                <li><a href=""><span>prototype</span></a></li>
+                                <li><a href=""><span>palworld</span></a></li>
+                                <!-- Q -->
+                                <li><a href=""><span>Quake 2</span></a></li>
+                                <!-- R -->
+                                <li><a href=""><span>rayman origins</span></a></li>
+                                <li><a href=""><span>rebel inc: escalation</span></a></li>
+                                <li><a href=""><span>resident evil 3 nemesis</span></a></li>
+                                <li><a href=""><span>revenfield</span></a></li>
+                                <li><a href=""><span>reventure</span></a></li>
+                                <li><a href=""><span>resident evil 4 ultimate edition</span></a></li>
+                                <li><a href=""><span>rayman legends</span></a></li>
+                                <li><a href=""><span>roboquest</span></a></li>
+                                <li><a href=""><span>raft</span></a></li>
+                                <li><a href=""><span>resident evil 4</span></a></li>
+                                <!-- S -->
+                                <li><a href=""><span>sonic mania</span></a></li>
+                                <li><a href=""><span>super meat boy forever</span></a></li>
+                                <li><a href=""><span>stone story rpg</span></a></li>
+                                <li><a href=""><span>spelp</span></a></li>
+                                <li><a href=""><span>super meat boy</span></a></li>
+                                <li><a href=""><span>saw</span></a></li>
+                                <li><a href=""><span>swat 4</span></a></li>
+                                <li><a href=""><span>sludge life</span></a></li>
+                                <li><a href=""><span>stardew vallew</span></a></li>
+                                <li><a href=""><span>slime rancher 2</span></a></li>
+                                <li><a href=""><span>slime rancher</span></a></li>
+                                <li><a href=""><span>surgeon simulator</span></a></li>
+                                <li><a href=""><span>silent hill 3</span></a></li>
+                                <li><a href=""><span>spiderman web of shadows</span></a></li>
+                                <li><a href=""><span>sniper elite</span></a></li>
+                                <li><a href=""><span>subnautica</span></a></li>
+                                <li><a href=""><span>subnautica below zero</span></a></li>
+                                <li><a href=""><span>sifu</span></a></li>
+                                <li><a href=""><span>spiderman miles morales</span></a></li>
+                                <!-- T -->
+                                <li><a href=""><span>totally accurate battle simulator</span></a></li>
+                                <li><a href=""><span>there is no game: wrong dimension</span></a></li>
+                                <li><a href=""><span>terminus zombie survivors</span></a></li>
+                                <li><a href=""><span>the herny stickmin collection</span></a></li>
+                                <li><a href=""><span>townscaper</span></a></li>
+                                <li><a href=""><span>terraria</span></a></li>
+                                <li><a href=""><span>tomb raider remastered 1, 2 y 3</span></a></li>
+                                <li><a href=""><span>the stanley parable</span></a></li>
+                                <li><a href=""><span>the forest online</span></a></li>
+                                <li><a href=""><span>the last of us</span></a></li>
+                                <!-- U -->
+                                <li><a href=""><span>unpacking</span></a></li>
+                                <li><a href=""><span>ultrakill</span></a></li>
+                                <li><a href=""><span>undertale</span></a></li>
+                                <!-- V -->
+                                <li><a href=""><span>victoria 2</span></a></li>
+                                <li><a href=""><span>victoria 3</span></a></li>
+                                <!-- W -->
+                                <li><a href=""><span>WARTALES</span></a></li>
+                                <li><a href=""><span>WORLD IN CONFLICT</span></a></li>
+                                <li><a href=""><span>wanted</span></a></li>
+                                <li><a href=""><span>WHILE TRUE: LEARN()</span></a></li>
+                                <li><a href=""><span>WORLDBOX</span></a></li>
+                                <!-- X -->
+                                <li><a href=""><span></span></a></li>
+                                <!-- Y -->
+                                <li><a href=""><span>youtubers life</span></a></li>
+                                <!-- Z -->
+                                <li><a href=""><span>ZOMBIE ARMY TRILOGY</span></a></li>
+                                <li><a href=""><span>ZED Z0NE</span></a></li>
+                                <!-- OTROS -->
+                                <li><a href=""><span>60 seconds REATOMIZED</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -174,5 +322,8 @@
     <footer>
 
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

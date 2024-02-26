@@ -104,6 +104,58 @@ header {
 }
 
 
+
+
+.navbar {
+    padding: 15px 0;
+    background-color: #35373a;
+}
+
+.form {
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.form .search_buscador {
+    display: flex;
+    background-color: #23272a;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.form .search_buscador input {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-radius: 30px;
+    width: 300px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    padding: 0 30px;
+}
+
+.form .search_buscador button {
+    background-color: #23272a;
+    outline: 0;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.form .search_buscador button:hover {
+    background-color: #426bff;
+}
+
+::placeholder {
+    color: white;
+    opacity: .4;
+}
+
+
 /*
    ----------------- MAIN -----------------
 */
@@ -157,7 +209,7 @@ section {
 
 .buscador {
     width: 100%;
-    background-color: white;
+    background-color: #35373a;
     display: flex;
     flex-direction: column;
     padding: 35px;
@@ -174,11 +226,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-bottom: 20px;
 }
 
 .juegos-links ul li a {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .juegos-links ul li a:hover {
@@ -216,7 +267,7 @@ aside {
 
 .juegos-nuevos {
     width: 100%;
-    background-color: white;
+    background-color: #35373a;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
