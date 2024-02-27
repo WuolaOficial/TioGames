@@ -34,6 +34,7 @@ header {
 
 .cabezera div {
     width: 1100px;
+    padding: 15px 0;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -44,11 +45,6 @@ header {
 .logo {
     font-size: 35px;
     color: white;
-}
-
-.animate-links:hover {
-    color: white;
-    background-color: #1E2124;
 }
 
 .discord {
@@ -77,54 +73,6 @@ nav {
     gap: 20px;
 }
 
-.menu-horizontal {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.menu-vertical li {
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
-}
-
-.menu-vertical {
-    position: absolute;
-    display: none;
-    width: 250px;
-    padding-left: 0;
-    z-index: 99;
-    overflow: hidden;
-    border-left: 2px solid #426bff;
-}
-
-.menu-horizontal li a {
-    padding: 25px 20px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.menu-horizontal li span {
-    padding: 25px 20px;
-    display: block;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
-.menu-horizontal li:hover .menu-vertical {
-    display: block;
-}
-
-.menu-vertical li:hover {
-    background-color: #27292b;
-}
-
-.menu-vertical li a {
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-}
-
-
 
 
 
@@ -141,15 +89,24 @@ nav {
     background-color: #35373a;
 }
 
-.navbar div {
+.contenedor-form {
     width: 1100px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
+}
+
+.form {
+    width: auto;
+    display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 #searchInput {
+    height: 40px;
     padding: 0px 30px;
     border-radius: 50px;
     background-color: transparent;
@@ -158,10 +115,11 @@ nav {
     color: white;
 }
 
-.navbar div button {
+.form button {
     background-color: transparent;
     color: white;
-    padding: 10px;
+    height: 40px;
+    width: 40px;
     border-radius: 50px;
     outline: 0;
     display: flex;
@@ -190,6 +148,44 @@ nav {
     color: white;
     opacity: .7;
 }
+
+
+
+
+
+
+
+.menu-horizontal {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu-horizontal li button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-horizontal li a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-horizontal li a:hover {
+    background-color: #1E2124;
+}
+
+.menu-horizontal li button:hover {
+    background-color: #1E2124;
+}
+
 
 /*
    ----------------- MAIN -----------------

@@ -30,27 +30,22 @@
             <div>
                 <span class="logo">TIOGAMES</span>
                 <nav>
-                    <ul class="menu-horizontal">
-                        <li><a class="animate-links" href="index.html">Home</a></li>
-                        <li>
-                            <span class="animate-links">requisitos</span>
-                            <ul class="menu-vertical">
-                                <li><a href="#">Pocos requisitos</a></li>
-                                <li><a href="#">Medio requisitos</a></li>
-                                <li><a href="#">Altos requisitos</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="animate-links" href="subpages/movil-apk.html">Movil</a></li>
-                    </ul>
-                    <button class="discord">DISCORD</button>
+                    <button class="discord"> <i class="fa-brands fa-discord"></i> DISCORD</button>
                 </nav>
             </div>
         </div>
         <div class="navbar">
-            <div>
-                <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
-                <button class="order-one" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="order-two" onclick="resetSearch()" class="bt-001"><i class="fa-solid fa-rotate-right"></i></button>
+            <div class="contenedor-form">
+                <div class="form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+                    <button title="Buscar" class="order-one" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Resetear" class="order-two" onclick="resetSearch()" class="bt-001"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+                <ul class="menu-horizontal">
+                    <li><a class="animate-links" href="index.html">Home</a></li>
+                    <li><button>Requisitos</button></li>
+                    <li><a class="animate-links" href="subpages/movil-apk.html">Movil</a></li>
+                </ul>
             </div>
         </div>
     </header>
