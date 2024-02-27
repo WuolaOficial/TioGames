@@ -47,6 +47,43 @@ header {
     color: white;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-horizontal {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu-horizontal li button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-horizontal li a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-horizontal li a:hover {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.menu-horizontal li button:hover {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
 .discord {
     padding: 10px 20px;
     border-radius: 10px;
@@ -58,7 +95,6 @@ header {
     border: 2px solid #426bff;
     color: white;
     font-size: 16px;
-    height: 50px;
     cursor: pointer;
 }
 
@@ -67,11 +103,7 @@ header {
     transition: .5s;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 
 
 
@@ -151,40 +183,22 @@ nav {
 
 
 
-
-
-
-
-.menu-horizontal {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+/* .box-elemento {
+    position: relative;
 }
 
-.menu-horizontal li button {
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 10px;
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
+#elemento {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.76);
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+} */
 
-.menu-horizontal li a {
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-}
 
-.menu-horizontal li a:hover {
-    background-color: #1E2124;
-}
-
-.menu-horizontal li button:hover {
-    background-color: #1E2124;
-}
 
 
 /*
