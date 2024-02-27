@@ -21,31 +21,36 @@
     <!--              Links estilos CSS              -->
 
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://kit.fontawesome.com/8ad8f596d2.js" crossorigin="anonymous"></script>
+    <!-- https://discord.gg/YVvUAM8gXM -->
 </head>
 <body>
-
     <header>
-        <div class="header searchSection">
-            <span class="logo">TIOGAMES</span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="pointer" href="#">Nuevos</a></li>
-                    <li><a class="pointer" href="#">Informacion</a></li>
-                    <li><a class="discord" href="https://discord.gg/YVvUAM8gXM"><span>Discord</span></a></li>
-                </ul>
-            </nav>
+        <div class="cabezera">
+            <div>
+                <span class="logo">TIOGAMES</span>
+                <nav>
+                    <ul class="menu-horizontal">
+                        <li><a class="animate-links" href="index.html">Home</a></li>
+                        <li>
+                            <span class="animate-links">requisitos</span>
+                            <ul class="menu-vertical">
+                                <li><a href="#">Pocos requisitos</a></li>
+                                <li><a href="#">Medio requisitos</a></li>
+                                <li><a href="#">Altos requisitos</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="animate-links" href="subpages/movil-apk.html">Movil</a></li>
+                    </ul>
+                    <button class="discord">DISCORD</button>
+                </nav>
+            </div>
         </div>
         <div class="navbar">
-            <div class="form">
-                <div class="search_buscador">
-                    
-                    <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
-                    <button onclick="search()">Buscar</button>
-                    <button onclick="resetSearch()">Eliminar</button>
-                
-                </div>
+            <div>
+                <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+                <button class="order-one" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="order-two" onclick="resetSearch()" class="bt-001"><i class="fa-solid fa-rotate-right"></i></button>
             </div>
         </div>
     </header>
@@ -331,7 +336,7 @@
                 <span>COPYRIGHT © 2024 TIOGAMES</span>
             </div>
             <div class="redes-info">
-                <a class="informacion" href="politica/dmca.html">DMCA</a>
+                <a class="informacion" href="subpages/dmca.html">DMCA</a>
             </div>
         </div>
     </footer>

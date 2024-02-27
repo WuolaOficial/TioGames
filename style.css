@@ -8,34 +8,32 @@
     box-sizing: border-box;
     font-family: 'Silkscreen', sans-serif;
 }
-
 a, img, button {
     display: block;
 }
-
 a {
     text-decoration: none;
 }
-
 ul {
     list-style: none;
 }
-
 body {
     background-color: #1E2124;
 }
 
-/*
-   ----------------- HEADER -----------------
-*/
+/*  ----------------- HEADER -----------------*/
+
 
 header {
+    background-color: transparent /* #424549 */;
+}
+
+.cabezera {
     background-color: #424549;
 }
 
-.header {
+.cabezera div {
     width: 1100px;
-    height: 70px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -43,16 +41,14 @@ header {
     align-items: center;
 }
 
-.header ul {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    
-}
-
 .logo {
     font-size: 35px;
     color: white;
+}
+
+.animate-links:hover {
+    color: white;
+    background-color: #1E2124;
 }
 
 .discord {
@@ -64,98 +60,136 @@ header {
     z-index: 1;
     transition: .5s;
     border: 2px solid #426bff;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    cursor: pointer;
 }
-
-/* .discord::after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 0%;
-    height: 300px;
-    left: 0;
-    bottom: 0;
-    background-color: #000000;
-    transition: .5s;
-    z-index: -1;
-}
-
-.discord span {
-    z-index: 99;
-} 
-
-.discord:hover::after {
-    width: 100%;
-    transition: .5s;
-}
-*/
 
 .discord:hover {
     background-color: #426bff;
     transition: .5s;
 }
 
-.header ul li a {
-    color: white;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.pointer {
-    pointer-events: none;
-    opacity: .5;
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
+
+.menu-vertical li {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    width: 250px;
+    padding-left: 0;
+    z-index: 99;
+    overflow: hidden;
+    border-left: 2px solid #426bff;
+}
+
+.menu-horizontal li a {
+    padding: 25px 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-horizontal li span {
+    padding: 25px 20px;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #27292b;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 .navbar {
-    padding: 15px 0;
     background-color: #35373a;
 }
 
-.form {
-    margin: 0 auto;
+.navbar div {
     width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
 }
 
-.form .search_buscador {
-    display: flex;
-    background-color: #23272a;
+#searchInput {
+    padding: 0px 30px;
     border-radius: 50px;
-    border: 2px solid #426bff;
-    overflow: hidden;
-}
-
-.form .search_buscador input {
     background-color: transparent;
+    border: 2px solid #426bff;
     outline: 0;
-    border: 0;
-    border-radius: 30px;
-    width: 300px;
-    height: 30px;
-    color: rgb(255, 255, 255);
-    padding: 0 30px;
-}
-
-.form .search_buscador button {
-    background-color: #23272a;
-    outline: 0;
-    border: 0;
     color: white;
-    cursor: pointer;
-    padding: 0 20px;
 }
 
-.form .search_buscador button:hover {
+.navbar div button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.order-one {
+    border: 2px solid #426bff;
+}
+
+.order-one:hover {
     background-color: #426bff;
+}
+
+.order-two {
+    border: 2px solid #ff5842;
+}
+
+.order-two:hover {
+    background-color: #ff5842;
 }
 
 ::placeholder {
     color: white;
-    opacity: .4;
+    opacity: .7;
 }
-
 
 /*
    ----------------- MAIN -----------------
